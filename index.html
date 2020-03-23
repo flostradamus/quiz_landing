@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/blobs_button.css">
+    <link rel="stylesheet" href="css/learn_more_button.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="active_page_1">
+    <nav class="navbar">
+        <div class="float_left">
+            <i class="fas fa-check"></i>
+            <div class="small">Создание маркетинговых квизов</div>
+        </div>
+        <div class="float_right">
+            <span><i class="fas fa-dollar-sign"></i>Тарифы</span>
+            <span><i class="fas fa-phone-alt"></i>Контакты</span>
+            <span><i class="fas fa-user"></i>Личный кабинет</span>
+        </div>
+        <span></span>
+    </nav>
+
+    <div class="point_block">
+        <div class="point active" data_index="1"></div>
+        <div class="point" data_index="2"></div>
+        <div class="point" data_index="3"></div>
+    </div>
+
+
+    <div id="page_wrapper">
+        <header class="page">
+            <img class="background_image opacity_element" src="images/header_background.png" alt="">
+            <div class="header_content">
+                <div class="header_body">
+                    <h1>Квиз опрос</h1>
+                    <h2>Лекгий способ увеличить продажи</h2>
+
+                    <a class="blob-btn" data_index="2">
+                        Что такое квиз?
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <a class="scroll_down" data_index="2"></a>
+        </header>
+        <section class="page">
+            <div class="opacity_element"></div>
+            <div class="page_content">
+                <h2>Что такое квиз?</h2>
+                <h3>Посетитель отвечает на вопросы квиза и оставляет свой контакт</h3>
+                <div class="what_quiz_block">
+                    <div class="element">
+                        <img
+                            src="data:image/svg+xml;base64,
+                        PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IiI+PGc+PGc+PHBhdGggZD0ibTI1NiAwYy0xNDEuMTY0MDYyIDAtMjU2IDExNC44MzU5MzgtMjU2IDI1NnMxMTQuODM1OTM4IDI1NiAyNTYgMjU2IDI1Ni0xMTQuODM1OTM4IDI1Ni0yNTYtMTE0LjgzNTkzOC0yNTYtMjU2LTI1NnptMCAwIiBmaWxsPSIjZmZjMTA3IiBkYXRhLW9yaWdpbmFsPSIjOUREM0M4IiBjbGFzcz0iIiBzdHlsZT0iZmlsbDojOUREM0M4IiBkYXRhLW9sZF9jb2xvcj0iI2ZmYzEwNyI+PC9wYXRoPjxwYXRoIGQ9Im0yNzcuMzMyMDMxIDM4NGMwIDExLjc4MTI1LTkuNTUwNzgxIDIxLjMzMjAzMS0yMS4zMzIwMzEgMjEuMzMyMDMxcy0yMS4zMzIwMzEtOS41NTA3ODEtMjEuMzMyMDMxLTIxLjMzMjAzMSA5LjU1MDc4MS0yMS4zMzIwMzEgMjEuMzMyMDMxLTIxLjMzMjAzMSAyMS4zMzIwMzEgOS41NTA3ODEgMjEuMzMyMDMxIDIxLjMzMjAzMXptMCAwIiBmaWxsPSIjZWNlZmYxIiBkYXRhLW9yaWdpbmFsPSIjRkZGRkZGIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjZWNlZmYxIj48L3BhdGg+PHBhdGggZD0ibTI4OS43Njk1MzEgMjY5LjY5NTMxMmMtNy41NTA3ODEgMy40NzY1NjMtMTIuNDM3NSAxMS4wOTM3NS0xMi40Mzc1IDE5LjM5NDUzMnY5LjU3ODEyNWMwIDExLjc3MzQzNy05LjUzNTE1NiAyMS4zMzIwMzEtMjEuMzMyMDMxIDIxLjMzMjAzMXMtMjEuMzMyMDMxLTkuNTU4NTk0LTIxLjMzMjAzMS0yMS4zMzIwMzF2LTkuNTc4MTI1YzAtMjQuODk4NDM4IDE0LjYzMjgxMi00Ny43MjI2NTYgMzcuMjI2NTYyLTU4LjE1NjI1IDIxLjczODI4MS0xMC4wMDM5MDYgMzcuNDM3NS0zNi41NjY0MDYgMzcuNDM3NS00OS42MDE1NjMgMC0yOS4zOTQ1MzEtMjMuOTE0MDYyLTUzLjMzMjAzMS01My4zMzIwMzEtNTMuMzMyMDMxcy01My4zMzIwMzEgMjMuOTM3NS01My4zMzIwMzEgNTMuMzMyMDMxYzAgMTEuNzc3MzQ0LTkuNTM5MDYzIDIxLjMzNTkzOC0yMS4zMzU5MzggMjEuMzM1OTM4cy0yMS4zMzIwMzEtOS41NTg1OTQtMjEuMzMyMDMxLTIxLjMzNTkzOGMwLTUyLjkyNTc4MSA0My4wNzAzMTItOTYgOTYtOTZzOTYgNDMuMDc0MjE5IDk2IDk2YzAgMjguODI0MjE5LTI1LjAwMzkwNiA3MS4xOTE0MDctNjIuMjMwNDY5IDg4LjM2MzI4MXptMCAwIiBmaWxsPSIjZmFmYWZhIiBkYXRhLW9yaWdpbmFsPSIjRkZGRkZGIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjZmFmYWZhIj48L3BhdGg+PC9nPjwvZz4gPC9zdmc+" />
+                        <p class="header_text">Узнаете потребности клиента</p>
+                        <p class="text">В зависимости от ответов посетителя, можно сделать предложение, подходящее
+                            именно для него.</p>
+                    </div>
+                    <div class="element">
+                        <img
+                            src="data:image/svg+xml;base64,
+                            PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3My45MzEgNDczLjkzMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDczLjkzMSA0NzMuOTMxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGNsYXNzPSIiPjxnPjxjaXJjbGUgc3R5bGU9ImZpbGw6IzlERDNDOCIgY3g9IjIzNi45NjYiIGN5PSIyMzYuOTY2IiByPSIyMzYuOTY2IiBkYXRhLW9yaWdpbmFsPSIjM0NCODgxIiBjbGFzcz0iIiBkYXRhLW9sZF9jb2xvcj0iIzNDQjg4MSI+PC9jaXJjbGU+PHBhdGggc3R5bGU9ImZpbGw6Izc2NzY3NjsiIGQ9Ik0zODcuMDg1LDIwNi4yMjdjLTIyLjE3NC03OS40NzktNTEuNTA5LTk5LjgzLTc4LjU4MS05Mi4yNzYgIGMtNi41MjksMS44MTgtMTIuMzI1LDUuMTE5LTE3LjA1OSwxMC4xNTljLTEzLjE2LDMuOTU5LTMwLjczMSw4LjA1Ni00Ny4xNSw4LjA1NmMtMTcuNDk2LDAtMzYuMzEtNC42NTUtNDkuNjc5LTguODMxICBjLTQuOTUtNS44NDgtMTEuMTg4LTkuNTgzLTE4LjMwOC0xMS41NzNjLTI3LjA3NS03LjU1NS01Ni40MTEsMTIuODAxLTc4LjU4NCw5Mi4yNzljLTIyLjE3NCw3OS40NzUtMTguMTk2LDE1MC4wMjYsOC44NzUsMTU3LjU4NCAgYzIyLjQzMiw2LjI1Niw1Ni45NS0yNi4xNDQsNzkuNjE3LTg0Ljg3NGMxMi4wOTMtMy43MDQsMzUuNDE2LTE0LjM0Miw1NS44OTQtMTQuMzQyYzE4LjQ1NCwwLDQxLjc2NiwxLjcyNSw1Ni4zNjYsNS42MTMgIGMyNi42NzksNjEuMTU5LDU3Ljk5Nyw5OC43MzQsODAuODU2LDkyLjM1NEM0MDYuNDE1LDM1Mi44MTgsNDA5LjI1OSwyODUuNzEsMzg3LjA4NSwyMDYuMjI3eiIgZGF0YS1vcmlnaW5hbD0iIzc2NzY3NiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGQ9Ik0zODcuMDg1LDE5OS42NmMtMjIuMTc0LTc5LjQ3OS01MS41MDktOTkuODM0LTc4LjU4MS05Mi4yNzYgIGMtNi41MjksMS44MjItMTIuMzI1LDUuMTE1LTE3LjA1OSwxMC4xNTljLTEzLjE2LDMuOTYzLTMwLjczMSw4LjA1Ni00Ny4xNSw4LjA1NmMtMTcuNDk2LDAtMzYuMzEtNC42NTUtNDkuNjc5LTguODM0ICBjLTQuOTUtNS44NDUtMTEuMTg4LTkuNTgzLTE4LjMwOC0xMS41N2MtMjcuMDc1LTcuNTU1LTU2LjQxMSwxMi44MDEtNzguNTg0LDkyLjI3OXMtMTguMTk2LDE1MC4wMyw4Ljg3NSwxNTcuNTg0ICBjMjIuNDMyLDYuMjU2LDUzLjY2OC0zMi43MSw3Ni4zMzYtOTEuNDQxYzEyLjA5My0zLjcwNCwzOC42OTctMTEuMDU3LDU5LjE3Mi0xMS4wNTdjMTguNDU0LDAsNDMuODU3LDUuOTcyLDU4LjQ1OCw5Ljg2ICBjMjIuNzU3LDYwLjYyNCw1NC43ODMsMTAxLjIsNzcuNjM4LDk0LjgyN0M0MDUuMjg1LDM0OS42OSw0MDkuMjU5LDI3OS4xMzksMzg3LjA4NSwxOTkuNjZ6IiBkYXRhLW9yaWdpbmFsPSIjRUNFQ0VDIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjRUNFQ0VDIj48L3BhdGg+PGVsbGlwc2Ugc3R5bGU9ImZpbGw6I0UxRTFFMTsiIGN4PSIxNTguMDg5IiBjeT0iMTU1LjM1OCIgcng9IjIxLjYxNiIgcnk9IjIzLjYwMyIgZGF0YS1vcmlnaW5hbD0iI0UxRTFFMSIgY2xhc3M9IiI+PC9lbGxpcHNlPjxjaXJjbGUgc3R5bGU9ImZpbGw6IzgxODI4MjsiIGN4PSIxNTguMDg5IiBjeT0iMTU0LjM0OCIgcj0iMTkuNDIzIiBkYXRhLW9yaWdpbmFsPSIjODE4MjgyIiBjbGFzcz0iIj48L2NpcmNsZT48Y2lyY2xlIHN0eWxlPSJmaWxsOiM0RDRENEQ7IiBjeD0iMTU4LjA4OSIgY3k9IjE1NC4zNDgiIHI9IjE0LjUwMyIgZGF0YS1vcmlnaW5hbD0iIzRENEQ0RCIgY2xhc3M9IiI+PC9jaXJjbGU+PGVsbGlwc2Ugc3R5bGU9ImZpbGw6I0UxRTFFMTsiIGN4PSIyMDQuMzUyIiBjeT0iMjEzLjk5MSIgcng9IjMxLjc0MSIgcnk9IjMzLjExNSIgZGF0YS1vcmlnaW5hbD0iI0UxRTFFMSIgY2xhc3M9IiI+PC9lbGxpcHNlPjxnPgoJPGc+CgkJPGc+CgkJCTxnPgoJCQkJPHBhdGggc3R5bGU9ImZpbGw6IzYzNjQ2MzsiIGQ9Ik0xNzcuMzg2LDIyMS41OTFjMi45NzEsOC4wOTMsOS40OTMsMTQuNDU4LDE3LjY5OSwxNy4xOTN2LTE3LjE5M0gxNzcuMzg2eiIgZGF0YS1vcmlnaW5hbD0iIzYzNjQ2MyIgY2xhc3M9IiI+PC9wYXRoPgoJCQkJPHBhdGggc3R5bGU9ImZpbGw6IzYzNjQ2MzsiIGQ9Ik0yMTMuNDksMjM4LjYyN2M4LjAxMS0yLjgwNiwxNC4zNjEtOS4wODUsMTcuMjgzLTE3LjA0SDIxMy40OVYyMzguNjI3eiIgZGF0YS1vcmlnaW5hbD0iIzYzNjQ2MyIgY2xhc3M9IiI+PC9wYXRoPgoJCQkJPHBhdGggc3R5bGU9ImZpbGw6IzYzNjQ2MzsiIGQ9Ik0xOTUuMDg4LDE4NC44MDljLTguNjczLDIuODg5LTE1LjUwMiw5LjgyNi0xOC4yMDQsMTguNTg1aDE4LjIwNEwxOTUuMDg4LDE4NC44MDkgICAgICBMMTk1LjA4OCwxODQuODA5eiIgZGF0YS1vcmlnaW5hbD0iIzYzNjQ2MyIgY2xhc3M9IiI+PC9wYXRoPgoJCQkJPHBhdGggc3R5bGU9ImZpbGw6IzYzNjQ2MzsiIGQ9Ik0yMzEuMjY3LDIwMy4zOTVjLTIuNjU3LTguNjE3LTkuMzA5LTE1LjQ2MS0xNy43ODEtMTguNDMydjE4LjQzMkgyMzEuMjY3eiIgZGF0YS1vcmlnaW5hbD0iIzYzNjQ2MyIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8L2c+CgkJCTxwYXRoIHN0eWxlPSJmaWxsOiM0RDRENEQ7IiBkPSJNMjMxLjI2NywyMDMuMzk1aC0xNy43ODF2LTE4LjQzMmMtMi45NTItMS4wMzMtNi4xMS0xLjYyOC05LjQxNC0xLjYyOCAgICAgYy0zLjE0MywwLTYuMTU5LDAuNTMxLTguOTg4LDEuNDc0djE4LjU4NWgtMTguMjA0Yy0wLjgxOSwyLjY1Ny0xLjI2NSw1LjQ3OC0xLjI2NSw4LjRjMCwzLjQ0NiwwLjY0NCw2LjczNSwxLjc3LDkuNzkyaDE3LjY5OSAgICAgdjE3LjE5M2MyLjgyOSwwLjk0Myw1Ljg0OCwxLjQ3NCw4Ljk4OCwxLjQ3NGMzLjMwNCwwLDYuNDYyLTAuNTkxLDkuNDE0LTEuNjI4di0xNy4wNGgxNy4yODMgICAgIGMxLjExOS0zLjA1NywxLjc2Mi02LjM0NiwxLjc2Mi05Ljc5MkMyMzIuNTMyLDIwOC44NzMsMjMyLjA5LDIwNi4wNTEsMjMxLjI2NywyMDMuMzk1eiIgZGF0YS1vcmlnaW5hbD0iIzRENEQ0RCIgY2xhc3M9IiI+PC9wYXRoPgoJCTwvZz4KCQkKCQkJPHJlY3QgeD0iMTg3Ljk3OSIgeT0iMTk2LjU3IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzIgMC43MDcgLTAuNzA3IDAuNzA3MiAyMTAuMDcxNCAtODIpIiBzdHlsZT0iZmlsbDojNEQ0RDREOyIgd2lkdGg9IjMyLjExOSIgaGVpZ2h0PSIzMi4xMTkiIGRhdGEtb3JpZ2luYWw9IiM0RDRENEQiIGNsYXNzPSIiPjwvcmVjdD4KCTwvZz4KPC9nPjxlbGxpcHNlIHN0eWxlPSJmaWxsOiNFMUUxRTE7IiBjeD0iMjg4LjM0IiBjeT0iMjIxLjkyNCIgcng9IjIxLjYxNiIgcnk9IjI0LjYyOCIgZGF0YS1vcmlnaW5hbD0iI0UxRTFFMSIgY2xhc3M9IiI+PC9lbGxpcHNlPjxjaXJjbGUgc3R5bGU9ImZpbGw6IzgxODI4MjsiIGN4PSIyODguNjM5IiBjeT0iMjIwLjgzOSIgcj0iMTkuNDI3IiBkYXRhLW9yaWdpbmFsPSIjODE4MjgyIiBjbGFzcz0iIj48L2NpcmNsZT48Y2lyY2xlIHN0eWxlPSJmaWxsOiM0RDRENEQ7IiBjeD0iMjg4LjYzOSIgY3k9IjIyMC44MzkiIHI9IjE0LjQ5OSIgZGF0YS1vcmlnaW5hbD0iIzRENEQ0RCIgY2xhc3M9IiI+PC9jaXJjbGU+PGc+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNCMkIyQjI7IiBjeD0iMjcxLjgwMSIgY3k9IjE1Ny4xOTEiIHI9IjUuNTYiIGRhdGEtb3JpZ2luYWw9IiNCMkIyQjIiIGNsYXNzPSIiPjwvY2lyY2xlPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojQjJCMkIyOyIgY3g9IjIxNS41NyIgY3k9IjE1Ny4xOTEiIHI9IjUuNTYiIGRhdGEtb3JpZ2luYWw9IiNCMkIyQjIiIGNsYXNzPSIiPjwvY2lyY2xlPgo8L2c+PGNpcmNsZSBzdHlsZT0iZmlsbDojNzY3Njc2OyIgY3g9IjI0NC4zIiBjeT0iMTU3LjYwMyIgcj0iMTYuMTQyIiBkYXRhLW9yaWdpbmFsPSIjNzY3Njc2IiBjbGFzcz0iIj48L2NpcmNsZT48Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBzdHlsZT0iZmlsbDojQjJCMkIyOyIgZD0iTTIzNC44NywxNDYuNjg0Yy0zLjA3OSwyLjY1Ny01LjA3LDYuNTQxLTUuMDcsMTAuOTMzYzAsMi43NjUsMC44MTksNS4zMjUsMi4xNjMsNy41MjUgICAgIGw5LjE2LTEwLjk0OEwyMzQuODcsMTQ2LjY4NHoiIGRhdGEtb3JpZ2luYWw9IiNCMkIyQjIiIGNsYXNzPSIiPjwvcGF0aD4KCQkJPHBhdGggc3R5bGU9ImZpbGw6I0IyQjJCMjsiIGQ9Ik0yNDQuNjQ0LDE1MC4xMjNjMS4wMzYtMS4yNjUsMS45NTctMi4zNjEsMi43NzYtMy4yOTNsMi4yNDUtMi42NiAgICAgYy0xLjY2MS0wLjY2Ni0zLjQ2NS0xLjA1MS01LjM2Ni0xLjA1MWMtMS41NDIsMC0zLjAwMSwwLjMwNy00LjM5MywwLjc1MmwyLjIxMSwyLjg1OSAgICAgQzI0My4xMzYsMTQ4LjAzNSwyNDMuOTc4LDE0OS4xNzMsMjQ0LjY0NCwxNTAuMTIzeiIgZGF0YS1vcmlnaW5hbD0iI0IyQjJCMiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBzdHlsZT0iZmlsbDojQjJCMkIyOyIgZD0iTTI1Ny4wNjYsMTY0LjM2NGMxLjA3NC0yLjAyNCwxLjc0LTQuMjk2LDEuNzQtNi43NDZjMC00LjE2MS0xLjc3Ny03Ljg4OC00LjU4Ny0xMC41MjkgICAgIGwtNS45MTYsNi43NjVMMjU3LjA2NiwxNjQuMzY0eiIgZGF0YS1vcmlnaW5hbD0iI0IyQjJCMiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBzdHlsZT0iZmlsbDojQjJCMkIyOyIgZD0iTTI0NC44NjgsMTU3Ljk0M2wtOS4wNDQsMTEuMzk0YzIuMzg3LDEuNzMyLDUuMzAyLDIuNzgsOC40NzUsMi43OCAgICAgYzMuNDU3LDAsNi41ODYtMS4yNTcsOS4wNzQtMy4yN2wtNi41ODItOC4zNjNMMjQ0Ljg2OCwxNTcuOTQzeiIgZGF0YS1vcmlnaW5hbD0iI0IyQjJCMiIgY2xhc3M9IiI+PC9wYXRoPgoJCTwvZz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojODFDNjgxOyIgZD0iTTI1Ny4wNjYsMTY0LjM2NGwtOC43NjMtMTAuNTE0bDUuOTE2LTYuNzY1Yy0xLjMxNy0xLjIzOS0yLjg1MS0yLjIzOC00LjU1Ny0yLjkxNWwtMi4yNDUsMi42NiAgICBjLTAuODE5LDAuOTMyLTEuNzQsMi4wMjgtMi43NzYsMy4yOTNjLTAuNjY2LTAuOTUtMS41MDQtMi4wODgtMi41MjYtMy4zOTRsLTIuMjExLTIuODU5Yy0xLjg3OCwwLjU5OS0zLjU4MSwxLjU1Ny01LjAzNiwyLjgxNCAgICBsNi4yNTIsNy41MWwtOS4xNiwxMC45NDhjMS4wMDMsMS42NDMsMi4zMDksMy4wNjgsMy44NjEsNC4xOTVsOS4wNDQtMTEuMzk0bDEuOTIzLDIuNTQxbDYuNTgyLDguMzYzICAgIEMyNTQuODkyLDE2Ny42MiwyNTYuMTQ2LDE2Ni4xLDI1Ny4wNjYsMTY0LjM2NHoiIGRhdGEtb3JpZ2luYWw9IiM4MUM2ODEiPjwvcGF0aD4KCTwvZz4KPC9nPjxjaXJjbGUgc3R5bGU9ImZpbGw6IzM1NzE4MDsiIGN4PSIzMDMuNDE5IiBjeT0iMTU3LjYwMyIgcj0iOS41NzkiIGRhdGEtb3JpZ2luYWw9IiMzNTcxODAiIGNsYXNzPSIiPjwvY2lyY2xlPjxwYXRoIHN0eWxlPSJmaWxsOiMyNjVFNjc7IiBkPSJNMjk3LjI4MywxNTEuNzI1aDMuOTgxbDIuMDc3LDMuNjAzbDIuMDE3LTMuNjAzaDMuOTQ4bC0zLjY0OCw1LjY3M2wzLjk4OSw2LjAzNWgtNC4wNjdsLTIuMzEyLTMuNzY0ICBsLTIuMzA5LDMuNzY0aC00LjA0NWw0LjAzNy02LjA5OUwyOTcuMjgzLDE1MS43MjV6IiBkYXRhLW9yaWdpbmFsPSIjMjY1RTY3IiBjbGFzcz0iIj48L3BhdGg+PGNpcmNsZSBzdHlsZT0iZmlsbDojRTc5RTJEOyIgY3g9IjMyMy4xMDEiIGN5PSIxMzcuOTE0IiByPSI5LjU3OSIgZGF0YS1vcmlnaW5hbD0iI0U3OUUyRCIgY2xhc3M9IiI+PC9jaXJjbGU+PHBhdGggc3R5bGU9ImZpbGw6I0FDNzgyQjsiIGQ9Ik0zMTcuMTY3LDEzMy4wNjRoMTIuNzQ0bC00LjU1Nyw2LjgwNnY0LjkwNWgtMy42MjZ2LTQuOTA1TDMxNy4xNjcsMTMzLjA2NHoiIGRhdGEtb3JpZ2luYWw9IiNBQzc4MkIiPjwvcGF0aD48Y2lyY2xlIHN0eWxlPSJmaWxsOiNFODQ4NDk7IiBjeD0iMzQyLjgyIiBjeT0iMTU3LjYwMyIgcj0iOS41NzkiIGRhdGEtb3JpZ2luYWw9IiNFODQ4NDkiPjwvY2lyY2xlPjxwYXRoIHN0eWxlPSJmaWxsOiNCMDM3Mzg7IiBkPSJNMzM4LjMxOSwxNTEuNjc2aDYuNzc2YzEuMTM0LDAsMS45OTQsMC4yNzMsMi42MDEsMC44MzRzMC45MDksMS4yNTMsMC45MDksMi4wOCAgYzAsMC42OTItMC4yMTcsMS4yODMtMC42NTEsMS43ODFjLTAuMjg0LDAuMzI5LTAuNzAzLDAuNTg3LTEuMjYxLDAuNzgyYzAuODQyLDAuMjA2LDEuNDYzLDAuNTUsMS44NTYsMS4wNDQgIGMwLjM5NywwLjQ5LDAuNTkxLDEuMTA4LDAuNTkxLDEuODU2YzAsMC42MDItMC4xMzgsMS4xNTItMC40MTksMS42MzljLTAuMjgxLDAuNDg2LTAuNjcsMC44NjQtMS4xNiwxLjE1MiAgYy0wLjMwNywwLjE3Mi0wLjc2LDAuMzAzLTEuMzczLDAuMzg1Yy0wLjgxMiwwLjEwNS0xLjM1NSwwLjE1Ny0xLjYyNCwwLjE1N2gtNi4yNDl2LTExLjcxMkgzMzguMzE5eiIgZGF0YS1vcmlnaW5hbD0iI0IwMzczOCI+PC9wYXRoPjxjaXJjbGUgc3R5bGU9ImZpbGw6IzJGODQ0MjsiIGN4PSIzMjMuMTAxIiBjeT0iMTc3LjMyMiIgcj0iOS41NzkiIGRhdGEtb3JpZ2luYWw9IiMyRjg0NDIiPjwvY2lyY2xlPjxwYXRoIHN0eWxlPSJmaWxsOiMyNTY1MzMiIGQ9Ik0zMjUuMjk0LDE4MC4zMjdoLTQuMTA4bC0wLjU2OSwxLjkzNGgtMy42OTNsNC40MDQtMTEuNzA4aDMuOTQ4bDQuNCwxMS43MDhoLTMuNzlMMzI1LjI5NCwxODAuMzI3eiIgZGF0YS1vcmlnaW5hbD0iIzI1NjUzMyIgY2xhc3M9IiIgZGF0YS1vbGRfY29sb3I9IiMyNTY1MzMiPjwvcGF0aD48L2c+IDwvc3ZnPg==" />
+                        <p class="header_text">Игровая механика</p>
+                        <p class="text">Интересно составленный опрос и игровая механика поможет не заскучать
+                            пользователю во время его прохождения.</p>
+                    </div>
+                    <div class="element">
+                        <img
+                            src="data:image/svg+xml;base64,
+                            PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Y2lyY2xlIHN0eWxlPSJmaWxsOiM5REQzQzgiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIgZGF0YS1vcmlnaW5hbD0iIzIxOTZGMyIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzIxOTZGMyI+PC9jaXJjbGU+PHBhdGggc3R5bGU9ImZpbGw6I0ZBRkFGQSIgZD0iTTM4NCwzMDguOTI4Yy0yNy42MTYsMC01My45NTItNi4wMTYtNzguMjQtMTcuODg4Yy0zLjgwOC0xLjgyNC04LjIyNC0yLjExMi0xMi4yNTYtMC43MzYgIGMtNC4wMzIsMS40MDgtNy4zMjgsNC4zNTItOS4xODQsOC4xNmwtMTEuNTIsMjMuODRjLTM0LjU2LTE5Ljg0LTYzLjIzMi00OC41NDQtODMuMTA0LTgzLjEwNGwyMy44NzItMTEuNTIgIGMzLjg0LTEuODU2LDYuNzUyLTUuMTUyLDguMTYtOS4xODRjMS4zNzYtNC4wMzIsMS4xMi04LjQ0OC0wLjczNi0xMi4yNTZjLTExLjkwNC0yNC4yNTYtMTcuOTItNTAuNTkyLTE3LjkyLTc4LjI0ICBjMC04LjgzMi03LjE2OC0xNi0xNi0xNkgxMjhjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZjMCwxNDkuOTg0LDEyMi4wMTYsMjcyLDI3MiwyNzJjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNTkuMDcyICBDNDAwLDMxNi4wOTYsMzkyLjgzMiwzMDguOTI4LDM4NCwzMDguOTI4eiIgZGF0YS1vcmlnaW5hbD0iI0ZBRkFGQSIgY2xhc3M9IiIgZGF0YS1vbGRfY29sb3I9IiNGQUZBRkEiPjwvcGF0aD48L2c+IDwvc3ZnPg==" />
+                        <p class="header_text">Возможность получить контакт клиента</p>
+                        <p class="text">Благодаря игровой механике конверсия в несколько раз выше,
+                            чем у обычной формы контактов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page">
+            <div class="page_content">
+                <h2>Преимущиства квиза</h2>
+            </div>
+        </section>
+        <!-- <section class="page">
+            <div class="opacity_element"></div>
+
+            <div class="page_content">
+                <h1>Примеры готовых квиз опросов</h1>
+                <div class="quiz_example_block">
+                    <div class="quiz_example">
+                        <img src="images/buiding.jpg" alt="">
+                        <div class="quiz_example_text_block">
+                            <p>Квиз строительство</p>
+                        </div>
+                    </div>
+                    <div class="quiz_example">
+                        <img src="images/repair.jpg" alt="">
+                        <div class="quiz_example_text_block">
+                            <p>Квиз ремонт</p>
+                        </div>
+                    </div>
+                    <div class="quiz_example">
+                        <img src="images/cleaning.jpg" alt="">
+                        <div class="quiz_example_text_block">
+                            <p>Квиз клининг</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Показать все</span>
+                </button>
+            </div>
+        </section> -->
+    </div>
+</body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+            </feColorMatrix>
+            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+    </defs>
+</svg>
+
+</html>
