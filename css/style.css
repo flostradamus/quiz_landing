@@ -40,7 +40,7 @@ body .point::after {
   background-color: white;
 }
 
-#page_wrapper .page:nth-child(1) .page_content h2 {
+#page_wrapper .page:nth-child(1) {
   color: white !important;
 }
 
@@ -60,12 +60,12 @@ body .point::after {
   background-color: #605e5c;
 }
 
-#page_wrapper .page:nth-child(2) .page_content h2 {
+#page_wrapper .page:nth-child(2) {
   color: #605e5c !important;
 }
 
 .active_page_3 {
-  background-color: rgba(242, 246, 6, 0.466);
+  background-color: #80ec98;
 }
 
 .active_page_3 .navbar {
@@ -80,7 +80,27 @@ body .point::after {
   background-color: white;
 }
 
-#page_wrapper .page:nth-child(3) .page_content h2 {
+#page_wrapper .page:nth-child(3) {
+  color: white !important;
+}
+
+.active_page_4 {
+  background-color: #ecea80;
+}
+
+.active_page_4 .navbar {
+  color: white;
+}
+
+.active_page_4 .point {
+  color: white;
+}
+
+.active_page_4 .point::after, .active_page_4 .point:hover::after {
+  background-color: white;
+}
+
+#page_wrapper .page:nth-child(4) {
   color: white !important;
 }
 
@@ -320,6 +340,7 @@ body .point::after {
           justify-content: center;
   padding: 0 80px;
   position: relative;
+  text-align: center;
 }
 
 #page_wrapper .page .page_content {
@@ -328,10 +349,10 @@ body .point::after {
 }
 
 #page_wrapper .page .page_content h2 {
-  font-size: 30px;
+  font-size: 40px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #page_wrapper .page .page_content h3 {
@@ -357,10 +378,6 @@ body .point::after {
 #page_wrapper .page .background_image {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#page_wrapper .page:nth-child(1) {
-  color: white;
 }
 
 #page_wrapper .page:nth-child(1) .header_content {
@@ -407,6 +424,10 @@ body .point::after {
   letter-spacing: -.005em;
 }
 
+#page_wrapper .page:nth-child(1) .header_content .header_body h2 {
+  font-size: 28px;
+}
+
 #page_wrapper .page:nth-child(1) .header_content .header_body h1,
 #page_wrapper .page:nth-child(1) .header_content .header_body h2 {
   -ms-flex-preferred-size: 100%;
@@ -416,7 +437,7 @@ body .point::after {
 }
 
 #page_wrapper .page:nth-child(1) .header_content .header_body div {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #page_wrapper .page:nth-child(1) .header_content .header_body div h3 {
@@ -429,11 +450,6 @@ body .point::after {
   right: -15%;
   top: 0;
   width: 50%;
-}
-
-#page_wrapper .page:nth-child(2) {
-  text-align: center;
-  color: #605e5c;
 }
 
 #page_wrapper .page:nth-child(2) .what_quiz_block {
@@ -467,13 +483,86 @@ body .point::after {
 
 #page_wrapper .page:nth-child(2) .what_quiz_block .element .header_text {
   font-weight: bold;
-  margin: 15px 0;
+  margin: 10px 0;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
 #page_wrapper .page:nth-child(2) .what_quiz_block .element .text {
   line-height: 1.5;
+}
+
+#page_wrapper .page:nth-child(4) .advantage_element img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#page_wrapper .advantage_element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page_wrapper .advantage_element img {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px #6dc580;
+          box-shadow: 0 0 10px #6dc580;
+}
+
+#page_wrapper .advantage_element img,
+#page_wrapper .advantage_element .content {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+#page_wrapper .advantage_element .content {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page_wrapper .advantage_element .content .header_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#page_wrapper .advantage_element .content .header_text,
+#page_wrapper .advantage_element .content .text {
+  margin-bottom: 10px;
+}
+
+#page_wrapper .advantage_element .content .text {
+  font-size: 18px;
+}
+
+#page_wrapper .advantage_element .content .button {
+  text-decoration: none;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 40px;
+  color: white;
+  background-color: #82d2e4;
+  -webkit-box-shadow: 0 0 10px #75bccc;
+          box-shadow: 0 0 10px #75bccc;
 }
 
 @-webkit-keyframes pulse {
