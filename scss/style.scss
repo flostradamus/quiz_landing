@@ -55,8 +55,8 @@ body {
 @include active_page(1, #81d0e1, white, white);
 @include active_page(2, #f0f7f9, #605e5c, #605e5c);
 @include active_page(3, #80ec98, white, white);
-@include active_page(4, #ecea80, rgb(255, 255, 255), white);
-@include active_page(5, #80eccb, rgb(255, 255, 255), white);
+@include active_page(4, #af76f0, white, white);
+@include active_page(5, #76d8d0, white, white);
 
 
 *,
@@ -417,15 +417,14 @@ $content_padding: 40px;
                 display: inline-block;
                 width: max-content;
                 padding: 10px 20px;
-                font-size: 21px;
+                font-size: 20px;
                 border-radius: 40px;
                 color: rgb(100, 100, 100);
                 background-color: white;
-                box-shadow: 0 0 10px rgb(149, 149, 149), 0 0 5px rgba(149, 149, 149, .5), inset 0 0 2px rgb(149, 149, 149);
                 font-weight: bold;
                 
                 &:hover {
-                    box-shadow: inset 0 0 10px rgb(149, 149, 149), inset 0 0 10px rgb(149, 149, 149);
+                    box-shadow: inset 0 0 5px rgb(149, 149, 149), inset 0 0 10px rgb(149, 149, 149);
 
                     span {
                         display: inline-block;
