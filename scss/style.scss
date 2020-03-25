@@ -2,7 +2,7 @@ $container_width:1100px;
 
 @mixin active_page ($page_number, $background_color, $navbar_color, $point_color) {
     .active_page_#{$page_number} {
-        background-color: $background_color;
+        background: $background_color;
 
         .navbar {
             color: $navbar_color;
@@ -49,7 +49,6 @@ body {
     .point::after {
         transition: background-color 1s;
     }
-
 }
 
 @include active_page(1, #81d0e1, white, white);
@@ -57,6 +56,8 @@ body {
 @include active_page(3, #80ec98, white, white);
 @include active_page(4, #af76f0, white, white);
 @include active_page(5, #76d8d0, white, white);
+@include active_page(6, #76d8d0, white, white);
+
 
 
 *,
@@ -93,6 +94,7 @@ $content_padding: 40px;
 }
 
 .navbar {
+    margin: auto;
     padding-top: 20px;
     flex-basis: 100%;
     align-self: flex-start;
@@ -132,10 +134,13 @@ $content_padding: 40px;
         margin-right: 7px;
     }
 
-    span {
+    a {
         cursor: pointer;
         margin-left: 15px;
         font-weight: bold;
+        text-decoration: none;
+        color: white;
+        display:block;
     }
 }
 
@@ -229,6 +234,7 @@ $content_padding: 40px;
 
         .page_content {
             max-width: $container_width;
+            width: 100%;
             z-index: 1;
 
             h2 {
@@ -418,17 +424,104 @@ $content_padding: 40px;
                 width: max-content;
                 padding: 10px 20px;
                 font-size: 20px;
-                border-radius: 40px;
+                border-radius: 10px;
                 color: rgb(100, 100, 100);
                 background-color: white;
-                font-weight: bold;
-                
+
                 &:hover {
                     box-shadow: inset 0 0 5px rgb(149, 149, 149), inset 0 0 10px rgb(149, 149, 149);
 
                     span {
                         display: inline-block;
                         transform: scale(0.98);
+                    }
+                }
+            }
+        }
+    }
+
+    .page:nth-child(6) {
+        background: linear-gradient(45deg, #af76f0, #76d8d0);
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(45deg, rgb(251, 243, 228), wheat);
+            clip-path: polygon(0 0, 0 100%, 100% 100%);
+        }
+
+        .page_content {
+            height: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            .content_block {
+                width: 100%;
+            }
+            .contact_block {
+                position: absolute;
+                bottom: 20px;
+                left: 5px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #26262a;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: start;
+                    transition: color, 200ms;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        color: #6ecac3;
+                    }
+                }
+                a:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .tarif_block {
+                display: flex;
+                justify-content: space-between;
+
+                .tarif {
+                    border-radius: 10px;
+                    width: 32%;
+                    background: wheat;
+                    padding: 40px;
+                    color: #26262a;
+                    font-weight: bold;
+
+                    .buy_text {
+                        margin-bottom: 10px;
+                    }
+
+                    .cost {
+                        font-size: 40px;
+                        margin-bottom: 30px;
+                    }
+
+                    .button_buy {
+                        display: inline-block;
+                        padding: 15px 20px;
+                        background: #26262a;
+                        font-size: 20px;
+                        border-radius: 5px;
+                        color: white;
+                        text-decoration: none;
+                        transition: background, 200ms;
+
+                        &:hover {
+                            background: #26262aa4;
+                        }
                     }
                 }
             }

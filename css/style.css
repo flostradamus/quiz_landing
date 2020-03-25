@@ -25,7 +25,7 @@ body .point::after {
 }
 
 .active_page_1 {
-  background-color: #81d0e1;
+  background: #81d0e1;
 }
 
 .active_page_1 .navbar {
@@ -45,7 +45,7 @@ body .point::after {
 }
 
 .active_page_2 {
-  background-color: #f0f7f9;
+  background: #f0f7f9;
 }
 
 .active_page_2 .navbar {
@@ -65,7 +65,7 @@ body .point::after {
 }
 
 .active_page_3 {
-  background-color: #80ec98;
+  background: #80ec98;
 }
 
 .active_page_3 .navbar {
@@ -85,7 +85,7 @@ body .point::after {
 }
 
 .active_page_4 {
-  background-color: #af76f0;
+  background: #af76f0;
 }
 
 .active_page_4 .navbar {
@@ -105,7 +105,7 @@ body .point::after {
 }
 
 .active_page_5 {
-  background-color: #76d8d0;
+  background: #76d8d0;
 }
 
 .active_page_5 .navbar {
@@ -121,6 +121,26 @@ body .point::after {
 }
 
 #page_wrapper .page:nth-child(5) {
+  color: white !important;
+}
+
+.active_page_6 {
+  background: #76d8d0;
+}
+
+.active_page_6 .navbar {
+  color: white;
+}
+
+.active_page_6 .point {
+  color: white;
+}
+
+.active_page_6 .point::after, .active_page_6 .point:hover::after {
+  background-color: white;
+}
+
+#page_wrapper .page:nth-child(6) {
   color: white !important;
 }
 
@@ -157,6 +177,7 @@ body .point::after {
 }
 
 .navbar {
+  margin: auto;
   padding-top: 20px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -205,10 +226,13 @@ body .point::after {
   margin-right: 7px;
 }
 
-.navbar span {
+.navbar a {
   cursor: pointer;
   margin-left: 15px;
   font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
 .point_block {
@@ -365,6 +389,7 @@ body .point::after {
 
 #page_wrapper .page .page_content {
   max-width: 1100px;
+  width: 100%;
   z-index: 1;
 }
 
@@ -585,10 +610,9 @@ body .point::after {
   width: max-content;
   padding: 10px 20px;
   font-size: 20px;
-  border-radius: 40px;
+  border-radius: 10px;
   color: #646464;
   background-color: white;
-  font-weight: bold;
 }
 
 #page_wrapper .advantage_element .content .button:hover {
@@ -600,6 +624,110 @@ body .point::after {
   display: inline-block;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+#page_wrapper .page:nth-child(6) {
+  background: linear-gradient(45deg, #af76f0, #76d8d0);
+}
+
+#page_wrapper .page:nth-child(6)::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(45deg, #fbf3e4, wheat);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+#page_wrapper .page:nth-child(6) .page_content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .content_block {
+  width: 100%;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .contact_block {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .contact_block a {
+  display: block;
+  text-decoration: none;
+  color: #26262a;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: start;
+  -webkit-transition: color, 200ms;
+  transition: color, 200ms;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .contact_block a i {
+  margin-right: 10px;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .contact_block a:hover {
+  text-decoration: underline;
+  color: #6ecac3;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .contact_block a:first-child {
+  margin-bottom: 10px;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif {
+  border-radius: 10px;
+  width: 32%;
+  background: wheat;
+  padding: 40px;
+  color: #26262a;
+  font-weight: bold;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif .buy_text {
+  margin-bottom: 10px;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif .cost {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif .button_buy {
+  display: inline-block;
+  padding: 15px 20px;
+  background: #26262a;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: background, 200ms;
+  transition: background, 200ms;
+}
+
+#page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif .button_buy:hover {
+  background: #26262aa4;
 }
 
 @-webkit-keyframes pulse {
