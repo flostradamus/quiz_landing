@@ -104,6 +104,26 @@ body .point::after {
   color: white !important;
 }
 
+.active_page_5 {
+  background-color: #80eccb;
+}
+
+.active_page_5 .navbar {
+  color: white;
+}
+
+.active_page_5 .point {
+  color: white;
+}
+
+.active_page_5 .point::after, .active_page_5 .point:hover::after {
+  background-color: white;
+}
+
+#page_wrapper .page:nth-child(5) {
+  color: white !important;
+}
+
 *,
 *:before,
 *:after {
@@ -352,7 +372,6 @@ body .point::after {
   font-size: 40px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 50px;
 }
 
 #page_wrapper .page .page_content h3 {
@@ -484,8 +503,7 @@ body .point::after {
 #page_wrapper .page:nth-child(2) .what_quiz_block .element .header_text {
   font-weight: bold;
   margin: 10px 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
 }
 
 #page_wrapper .page:nth-child(2) .what_quiz_block .element .text {
@@ -496,15 +514,25 @@ body .point::after {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  -webkit-box-shadow: 0 0 10px #c0bf68;
+          box-shadow: 0 0 10px #c0bf68;
+}
+
+#page_wrapper .page:nth-child(5) .advantage_element img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #page_wrapper .advantage_element {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #page_wrapper .advantage_element img {
@@ -515,12 +543,11 @@ body .point::after {
 
 #page_wrapper .advantage_element img,
 #page_wrapper .advantage_element .content {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  width: 42%;
 }
 
 #page_wrapper .advantage_element .content {
-  padding: 0 10px;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,7 +570,7 @@ body .point::after {
 
 #page_wrapper .advantage_element .content .header_text,
 #page_wrapper .advantage_element .content .text {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 #page_wrapper .advantage_element .content .text {
@@ -557,12 +584,24 @@ body .point::after {
   width: -moz-max-content;
   width: max-content;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 21px;
   border-radius: 40px;
-  color: white;
-  background-color: #82d2e4;
-  -webkit-box-shadow: 0 0 10px #75bccc;
-          box-shadow: 0 0 10px #75bccc;
+  color: #646464;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #959595, 0 0 5px rgba(149, 149, 149, 0.5), inset 0 0 2px #959595;
+          box-shadow: 0 0 10px #959595, 0 0 5px rgba(149, 149, 149, 0.5), inset 0 0 2px #959595;
+  font-weight: bold;
+}
+
+#page_wrapper .advantage_element .content .button:hover {
+  -webkit-box-shadow: inset 0 0 10px #959595, inset 0 0 10px #959595;
+          box-shadow: inset 0 0 10px #959595, inset 0 0 10px #959595;
+}
+
+#page_wrapper .advantage_element .content .button:hover span {
+  display: inline-block;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 @-webkit-keyframes pulse {
