@@ -694,6 +694,7 @@ body .point::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 
 #page_wrapper .page:nth-child(6) .page_content .tarif_block .tarif {
