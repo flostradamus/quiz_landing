@@ -1,20 +1,37 @@
 'use strict'
 let data_index_elements = document.querySelectorAll('[data_index]');
-let page_wrapper = document.querySelector('#page_wrapper');
-let page_number = document.querySelectorAll('.page').length;
+let page_wrapper = document.querySelector('.page_wrapper');
+let pages = document.querySelectorAll('.page');
+let page_number = pages.length;
+let contacts = document.querySelector('.contacts');
 let active_page = 1;
 let scroll_status = 1;
+function contacts_transition() {
+    contacts.querySelector('div').style.transition = 'opacity, 1000ms';
+    page_wrapper.style.transition = 'blur, 1000ms';
+}
+document.querySelector('.contacts_button').onclick = () => {
+    contacts_transition();
+    contacts.style.visibility = 'visible';
+    page_wrapper.style.filter = 'blur(8px)';
+    contacts.querySelector('div').style.opacity = '1';
+}
+contacts.querySelector('.button_close').onclick = () => {
+    contacts_transition();
+    contacts.style.visibility = 'hidden';
+    page_wrapper.style.filter = 'blur(0px)';
+    contacts.querySelector('div').style.opacity = '0';
+}
 
 function scroll(data_index) {
-    if (data_index < 1 || data_index > page_number || data_index == active_page) {
+    if (data_index < 1 || data_index > page_number || data_index == active_page || getComputedStyle(document.body).overflow == 'visible') {
         return;
     }
     active_page = data_index;
     let translateY = -100 * (data_index - 1);
-    page_wrapper.style.cssText = `
-            transition: transform 1000ms cubic-bezier(0.55, 0, 0.1, 1) 0s;
-            transform: translate(0px, ${translateY}%);
-        `;
+    page_wrapper.style.transition = 'transform 1000ms cubic-bezier(0.55, 0, 0.1, 1) 0s';
+    page_wrapper.style.transform = `translate(0px, ${translateY}%)`;
+
     scroll_status = 0;
     setTimeout(() => {
         scroll_status = 1;

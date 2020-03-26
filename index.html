@@ -14,14 +14,21 @@
 </head>
 
 <body class="active_page_1">
+    <section class="contacts">
+        <div>
+            <i class="fas fa-times button_close"></i>
+            <a href="tel:+79021956791"><i class="fas fa-phone-alt"></i>7 902 195 6791</a>
+            <a href="mailto:info@quiz-opros.ru"><i class="fas fa-envelope"></i>info@quiz-opros.ru</a>
+        </div>
+    </section>
     <nav class="navbar">
         <div class="float_left">
             <i class="fas fa-check"></i>
             <div class="small">Создание маркетинговых квизов</div>
         </div>
         <div class="float_right">
-            <a data_index="6"><i class="fas fa-dollar-sign"></i>Тарифы</a>
-            <a href=""><i class="fas fa-phone-alt"></i>Контакты</a>
+            <a data_index="7"><i class="fas fa-dollar-sign"></i>Тарифы</a>
+            <a class="contacts_button"><i class="fas fa-phone-alt"></i>Контакты</a>
             <a href="/account"><i class="fas fa-user"></i>Личный кабинет</a>
         </div>
         <span></span>
@@ -34,11 +41,13 @@
         <div class="point" data_index="4"></div>
         <div class="point" data_index="5"></div>
         <div class="point" data_index="6"></div>
+        <div class="point" data_index="7"></div>
     </div>
 
 
-    <div id="page_wrapper">
+    <div class="page_wrapper">
         <header class="page">
+
             <div class="header_content">
                 <div class="header_body">
                     <h1>Квиз опрос</h1>
@@ -111,7 +120,7 @@
                         <p class="header_text">Игровая механика</p>
                         <p class="text">Интересно составленный опрос и игровая механика поможет не заскучать
                             пользователю во время его прохождения.</p>
-                        <a href="/reg" class="button"><span>Примеры квиз опросов</span></a>
+                        <a data_index="6" class="button"><span>Примеры квиз опросов</span></a>
                     </div>
                 </div>
             </div>
@@ -124,9 +133,34 @@
                     <div class="content">
                         <p class="header_text">Адаптивность</p>
                         <p class="text">Подходит к Вашему бизнесу и легко импортируется на ваш сайт.</p>
-                        <a href="/reg" class="button"><span>Примеры квиз опросов</span></a>
+                        <a data_index="6" class="button"><span>Примеры квиз опросов</span></a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="page">
+            <div class="page_content">
+                <h2>Примеры квиз опросов</h2>
+                <div class="quiz_example_block">
+                    <div class="quiz_example">
+                        <img src="images/building.jpg" alt="">
+                        <p>Квиз строительство</p>
+                    </div>
+                    <div class="quiz_example">
+                        <img src="images/repair.jpg" alt="">
+                        <p>Квиз ремонт</p>
+                    </div>
+                    <div class="quiz_example">
+                        <img src="images/cleaning.jpg" alt="">
+                        <p>Квиз клининг</p>
+                    </div>
+                </div>
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Показать все</span>
+                </button>
             </div>
         </section>
         <section class="page">
@@ -141,56 +175,22 @@
                         <div class="tarif">
                             <p class="buy_text">Попробуй бесплатно!</p>
                             <p class="cost">5 дней</p>
-                            <a href="/buy" class="button_buy">Купить</a>
+                            <a href="/reg" class="button_buy">Попробовать</a>
                         </div>
                         <div class="tarif">
                             <p class="buy_text">При оплате на месяц</p>
                             <p class="cost">700 р</p>
-                            <a href="/buy" class="button_buy">Купить</a>
+                            <a href="/reg" class="button_buy">Купить</a>
                         </div>
                         <div class="tarif">
                             <p class="buy_text">При оплате на год</p>
                             <p class="cost">5000 р</p>
-                            <a href="/buy" class="button_buy">Купить</a>
+                            <a href="/reg" class="button_buy">Купить</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- <section class="page">
-            <div class="opacity_element"></div>
-
-            <div class="page_content">
-                <h1>Примеры готовых квиз опросов</h1>
-                <div class="quiz_example_block">
-                    <div class="quiz_example">
-                        <img src="images/buiding.jpg" alt="">
-                        <div class="quiz_example_text_block">
-                            <p>Квиз строительство</p>
-                        </div>
-                    </div>
-                    <div class="quiz_example">
-                        <img src="images/repair.jpg" alt="">
-                        <div class="quiz_example_text_block">
-                            <p>Квиз ремонт</p>
-                        </div>
-                    </div>
-                    <div class="quiz_example">
-                        <img src="images/cleaning.jpg" alt="">
-                        <div class="quiz_example_text_block">
-                            <p>Квиз клининг</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Показать все</span>
-                </button>
-            </div>
-        </section> -->
     </div>
 </body>
 
@@ -204,5 +204,6 @@
         </filter>
     </defs>
 </svg>
+
 
 </html>
