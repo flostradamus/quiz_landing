@@ -1,4 +1,5 @@
 $container_width:1100px;
+$media_mobile_point:850px;
 
 @mixin active_page ($page_number, $background_color, $navbar_color, $point_color) {
     .active_page_#{$page_number} {
@@ -25,9 +26,10 @@ $container_width:1100px;
 
     .page_wrapper {
         .page:nth-child(#{$page_number}) {
-            @media screen and (max-width:850px){
+            @media screen and (max-width:$media_mobile_point) {
                 background-color: $background_color;
             }
+
             color: $point_color !important;
         }
     }
@@ -39,8 +41,16 @@ body {
     height: 100%;
     overflow: hidden;
     font-size: 16px;
-    @media screen and (max-width:850px){
+
+    @media screen and (max-width:$media_mobile_point) {
         overflow: visible;
+        .page {
+            padding-top: 100px!important;
+            padding-bottom: 100px!important;
+        }
+        .what_quiz_block {
+            flex-direction: column!important;
+        }
     }
 }
 
@@ -86,11 +96,8 @@ body {
 .page {
     position: relative;
     width: 100%;
-    height: 100%;
 }
-.page {
-    height:150%;
-}
+
 .navbar,
 .point_block,
 .scroll_down {
@@ -285,8 +292,10 @@ $content_padding: 40px;
 }
 
 .page_wrapper {
+    height: 100%;
 
     .page {
+        min-height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -391,15 +400,13 @@ $content_padding: 40px;
         .what_quiz_block {
             display: flex;
 
-            @media screen and (max-width:850px) {
-                flex-direction: column;
-            }
             .element {
                 flex-basis: 31%;
                 margin-right: 20px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+
                 img {
                     width: 80px;
                     height: 80px;
@@ -507,6 +514,7 @@ $content_padding: 40px;
 
     .page:nth-child(7) {
         background: linear-gradient(45deg, #af76f0, #76d8d0);
+        height: 100%;
 
         &::before {
             content: '';

@@ -11,6 +11,18 @@ body {
   body {
     overflow: visible;
   }
+  html .page,
+  body .page {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+  html .what_quiz_block,
+  body .what_quiz_block {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
 }
 
 body {
@@ -231,11 +243,6 @@ body .point::after {
 .page {
   position: relative;
   width: 100%;
-  height: 100%;
-}
-
-.page {
-  height: 150%;
 }
 
 .navbar,
@@ -454,7 +461,12 @@ body .point::after {
   cursor: pointer;
 }
 
+.page_wrapper {
+  height: 100%;
+}
+
 .page_wrapper .page {
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,15 +587,6 @@ body .point::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 850px) {
-  .page_wrapper .page:nth-child(2) .what_quiz_block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 .page_wrapper .page:nth-child(2) .what_quiz_block .element {
@@ -719,6 +722,7 @@ body .point::after {
 
 .page_wrapper .page:nth-child(7) {
   background: linear-gradient(45deg, #af76f0, #76d8d0);
+  height: 100%;
 }
 
 .page_wrapper .page:nth-child(7)::before {
