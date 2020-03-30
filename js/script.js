@@ -6,9 +6,9 @@ let page_number = pages.length;
 let contacts = document.querySelector('.contacts');
 let active_page = 1;
 let scroll_status = 1;
-let mobile_scroll_status = 0;
-let global_scroll_status = 1;
-let status_first_resize = 1;
+let device_scrolling = 'desktop';
+let scrolling = 1;
+let first_resize = 1;
 function contacts_transition() {
     contacts.querySelector('div').style.transition = 'opacity, 1000ms';
     page_wrapper.style.transition = 'blur, 1000ms';
@@ -27,7 +27,7 @@ contacts.querySelector('.button_close').onclick = () => {
 }
 
 function scroll(call) {
-    global_scroll_status = 1;
+    scrolling = 1;
     if (!scroll_status) {
         return;
     }
@@ -38,8 +38,8 @@ function scroll(call) {
     if (active_page < 1 || active_page > page_number) {
         return;
     }
-    if (global_scroll_status) {
-        if (mobile_scroll_status) {
+    if (scrolling) {
+        if (device_scrolling == 'laptop') {
             pages[active_page - 1].scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -71,8 +71,8 @@ window.addEventListener('resize', () => {
     if (window.matchMedia('(max-width: 850px)').matches) {
         window.onscroll = (e) => {
             scroll(() => {
-                global_scroll_status = 0;
-                if (mobile_scroll_status || status_first_resize) {
+                scrolling = 0;
+                if (device_scrolling == 'laptop' || first_resize) {
                     while (true) {
                         let nextPageScrollTop = 1;
                         if (pages[active_page] !== undefined) {
@@ -91,10 +91,10 @@ window.addEventListener('resize', () => {
             });
         }
         window.dispatchEvent(new Event('scroll'));
-        if (!mobile_scroll_status) {
+        if (device_scrolling == 'desktop') {
             page_wrapper.style.transition = 'transform 0s';
             page_wrapper.style.transform = 'translateY(0)';
-            mobile_scroll_status = 1;
+            device_scrolling = 'laptop';
             scroll();
         }
 
@@ -103,8 +103,8 @@ window.addEventListener('resize', () => {
 
 
     } else {
-        if (mobile_scroll_status) {
-            mobile_scroll_status = 0;
+        if (device_scrolling == 'laptop') {
+            device_scrolling = 'desktop';
             scroll();
         }
 
@@ -140,4 +140,4 @@ window.addEventListener('resize', () => {
 });
 
 window.dispatchEvent(new Event('resize'));
-status_first_resize = 0;
+first_resize = 0;
