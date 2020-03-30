@@ -44,13 +44,6 @@ body {
 
     @media screen and (max-width:$media_mobile_point) {
         overflow: visible;
-        .page {
-            padding-top: 100px!important;
-            padding-bottom: 100px!important;
-        }
-        .what_quiz_block {
-            flex-direction: column!important;
-        }
     }
 }
 
@@ -112,7 +105,7 @@ $content_padding: 40px;
 }
 
 .navbar {
-    margin: auto;
+    margin: 0 auto;
     padding-top: 20px;
     flex-basis: 100%;
     align-self: flex-start;
@@ -120,6 +113,17 @@ $content_padding: 40px;
     align-items: center;
     position: fixed;
     width: 100%;
+    transition: box-shadow 1s;
+
+    .burger_button {
+        font-size: 45px;
+        z-index: 1;
+        margin: 0 auto;
+        cursor: pointer;
+        text-shadow: 0px 0px 15px rgba($color: white, $alpha: 0.4),
+            0px -10px 10px rgba($color: white, $alpha: 0.4);
+        display: none;
+    }
 
     .float_left {
         margin-right: auto;
@@ -137,13 +141,13 @@ $content_padding: 40px;
         align-items: center;
     }
 
-    @media screen and (max-width:705px) {
+    @media screen and (max-width:780px) {
         .float_left {
             display: none;
         }
 
         .float_right {
-            margin: auto;
+            margin: 0 auto;
         }
     }
 
@@ -158,6 +162,10 @@ $content_padding: 40px;
         font-weight: bold;
         text-decoration: none;
         display: block;
+    }
+
+    @media screen and (max-width:$media_mobile_point) {
+        font-size: 18px;
     }
 }
 
@@ -282,10 +290,7 @@ $content_padding: 40px;
         }
 
         .button_close {
-            position: absolute;
             font-size: 60px;
-            right: -80px;
-            top: -80px;
             cursor: pointer;
         }
     }
@@ -299,9 +304,9 @@ $content_padding: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 $content_padding * 2;
         position: relative;
         text-align: center;
+        padding: 0 $content_padding * 2;
 
         .page_content {
             max-width: $container_width;
@@ -311,6 +316,7 @@ $content_padding: 40px;
             h2 {
                 font-size: 40px;
                 flex-basis: 100%;
+                margin-bottom: 30px;
             }
 
             h3 {
@@ -319,6 +325,65 @@ $content_padding: 40px;
                 font-family: Linotte-headings;
                 margin-bottom: 30px;
             }
+
+
+
+            @media screen and (max-width:$media_mobile_point) {
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+                .quiz_example_block,
+                .tarif_block {
+                    justify-content: space-around !important;
+
+                    .tarif,
+                    .quiz_example {
+                        width: 48% !important;
+                        margin-top: 2% !important;
+                    }
+
+                    .tarif:last-child {
+                        width: 100% !important;
+                    }
+                }
+
+                .advantage_element {
+                    .image {
+                        display: none !important;
+                    }
+
+                    .icon {
+                        display: block !important;
+                    }
+
+                    .content {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            @media screen and (max-width:650px) {
+
+                .quiz_example_block,
+                .tarif_block {
+
+                    .tarif,
+                    .quiz_example,
+                    .tarif:last-child {
+                        width: 350px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+
+                h2 {
+                    font-size: 35px;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+
         }
 
         .background_image {
@@ -336,73 +401,62 @@ $content_padding: 40px;
 
 
     .page:nth-child(1) {
+        z-index: 2;
 
-        .header_content {
-            position: absolute;
-            height: 100%;
-            width: 100%;
+        .page_content {
+            flex-basis: 100%;
+            text-align: center;
+            height: max-content;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
-            z-index: 2;
+            justify-content: center;
 
-            @media screen and (max-width:$container_width) {
-                margin: 0 20px;
+            h1 {
+                font-size: 55px;
+                font-weight: bold;
+                letter-spacing: -.005em;
             }
 
-            .header_body {
+            h2 {
+                font-size: 28px;
+            }
+
+            h1,
+            h2 {
                 flex-basis: 100%;
-                text-align: center;
-                height: max-content;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-
-                h1 {
-                    font-size: 55px;
-                    font-weight: bold;
-                    letter-spacing: -.005em;
-                }
-
-                h2 {
-                    font-size: 28px;
-                }
-
-                h1,
-                h2 {
-                    flex-basis: 100%;
-                    word-wrap: wrap;
-                    margin-bottom: 10px;
-                }
-
-                div {
-                    max-width: 700px;
-
-                    h3 {
-                        margin-bottom: 40px;
-                        font-weight: unset;
-                        line-height: 1.5;
-
-                    }
-                }
-
-                img {
-                    right: -15%;
-                    top: 0;
-                    width: 50%;
-                }
-
+                word-wrap: wrap;
+                margin-bottom: 10px;
             }
+
+            div {
+                max-width: 700px;
+
+                p {
+                    margin-bottom: 40px;
+                    font-weight: unset;
+                    line-height: 1.5;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                }
+            }
+
+            img {
+                right: -15%;
+                top: 0;
+                width: 50%;
+            }
+
         }
+
     }
 
     .page:nth-child(2) {
         .what_quiz_block {
             display: flex;
+            justify-content: space-between;
 
             .element {
-                flex-basis: 31%;
-                margin-right: 20px;
+                width: 32%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -426,12 +480,22 @@ $content_padding: 40px;
                     line-height: 1.5;
                 }
             }
+
+            @media screen and (max-width:$media_mobile_point) {
+                flex-direction: column;
+                align-items: center;
+
+                .element {
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 
     .page:nth-child(4) {
         .advantage_element {
-            img {
+            .image {
                 order: 1;
                 box-shadow: 0 0 10px #c0bf68;
             }
@@ -440,26 +504,31 @@ $content_padding: 40px;
 
     .page:nth-child(5) {
         .advantage_element {
-            img {
+            .image {
                 box-shadow: none;
             }
         }
     }
 
     .advantage_element {
-        margin-top: 40px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
-        img {
+        .image {
             border-radius: 15px;
             box-shadow: 0 0 10px #6dc580;
         }
 
-        img,
+        .image,
         .content {
             width: 42%;
+        }
+
+        .icon {
+            display: none;
+            width: 100px;
+            height: 100px;
         }
 
         .content {
@@ -525,6 +594,10 @@ $content_padding: 40px;
             height: 150px;
             background: linear-gradient(45deg, rgb(251, 243, 228), wheat);
             clip-path: polygon(0 0, 0 100%, 100% 100%);
+
+            @media screen and (max-width:$media_mobile_point) {
+                height: 110px;
+            }
         }
 
         // &::after {
@@ -572,7 +645,7 @@ $content_padding: 40px;
             .tarif_block {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 30px;
+                flex-wrap: wrap;
 
                 .tarif {
                     border-radius: 10px;
@@ -618,6 +691,10 @@ $content_padding: 40px;
                 }
             }
         }
+
+        @media screen and (max-width:$media_mobile_point) {
+            height: auto;
+        }
     }
 
     .page:nth-child(6) {
@@ -625,13 +702,12 @@ $content_padding: 40px;
 
         .quiz_example_block {
             flex-basis: 100%;
-            margin-top: 40px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
             .quiz_example {
-                flex-basis: 32.5%;
+                width: 32.5%;
                 position: relative;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
                 transition-property: box-shadow;
@@ -658,7 +734,6 @@ $content_padding: 40px;
                     font-size: 19px;
                     margin: auto 0;
                 }
-
             }
         }
 
@@ -698,5 +773,60 @@ $content_padding: 40px;
     60% {
         -webkit-transform: translate(-50%, -5px);
         transform: translate(-50%, -5px);
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .page {
+        padding: 0 10px !important;
+
+        &:nth-child(1) {
+            h1 {
+                font-size: 45px !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+    .contacts a {
+        font-size: 20px!important;
+    }
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: height 0.5s ease-out;
+        height: 0;
+        background: #605e5c;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-top: 0;
+        .float_right {
+            transition: opacity 1s;
+            opacity: 0;
+            flex-direction: column;
+            flex-basis: 100%;
+            * {
+                color: white;
+                margin-top: 10px;
+                i {
+                    display: none;
+                }
+            }
+        }
+        .burger_button {
+            margin-top: 20px;
+            display: block;
+        }
+    }
+
+    .point_block {
+        display: none;
     }
 }
