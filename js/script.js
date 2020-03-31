@@ -74,34 +74,36 @@ for (let i = 0; i < data_index_elements.length; i++) {
     });
 }
 
-
+button_burger.onclick = () => {
+    if (button_burger.classList.contains('fa-bars')) {
+        navbar.style.height = '100%';
+        float_right.style.opacity = '1';
+        button_burger.classList.remove('fa-bars');
+        button_burger.classList.add('fa-times');
+        button_burger.style.color = 'white';
+    } else {
+        navbar.style.height = '0';
+        float_right.style.opacity = '0';
+        button_burger.classList.remove('fa-times');
+        button_burger.classList.add('fa-bars');
+        button_burger.style.color = '';
+    }
+}
 window.addEventListener('resize', () => {
-    if (getComputedStyle(button_burger).display == 'block') {
-        button_burger.onclick = () => {
-            if (button_burger.classList.contains('fa-bars')) {
-                navbar.style.height = '100%';
-                float_right.style.opacity = '1';
-                button_burger.classList.remove('fa-bars');
-                button_burger.classList.add('fa-times');
-                button_burger.style.color = 'white';
-            } else {
-                navbar.style.height = '0';
-                float_right.style.opacity = '0';
-                button_burger.classList.remove('fa-times');
-                button_burger.classList.add('fa-bars');
-                button_burger.style.color = '';
-            }
+    if (getComputedStyle(button_burger).display == 'none') {
+        navbar.style = '';
+        float_right.style = '';
+        for (let i = 0; i < navbar_items.length; i++) {
+            let navbar_item = navbar_items[i];
+            navbar_item.onclick = null;
         }
-
+    } else {
         for (let i = 0; i < navbar_items.length; i++) {
             let navbar_item = navbar_items[i];
             navbar_item.onclick = () => {
                 button_burger.dispatchEvent(new Event('click'));
             }
         }
-    } else {
-        navbar.style = '';
-        float_right.style = '';
     }
     if (window.matchMedia('(max-width: 850px)').matches) {
         window.onscroll = (e) => {
